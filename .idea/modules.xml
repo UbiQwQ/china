@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/china.iml" filepath="$PROJECT_DIR$/china.iml" />
+      <module fileurl="file://$PROJECT_DIR$/china_common/china_common.iml" filepath="$PROJECT_DIR$/china_common/china_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/china_interface/china_interface.iml" filepath="$PROJECT_DIR$/china_interface/china_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/china_service/china_service.iml" filepath="$PROJECT_DIR$/china_service/china_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/china_web/china_web.iml" filepath="$PROJECT_DIR$/china_web/china_web.iml" />
+    </modules>
+  </component>
+</project>
