@@ -1,2 +1,16 @@
 server: 
     port: 8080
+
+spring:
+    application:
+        name: china_web
+    dubbo:
+        application:
+            name: china_web
+            id: china_web
+        protocol:
+            port: 20800
+            name: dubbo
+        registry:
+            address: zookeeper://127.0.0.1:2181
+        scan: blct.china_interface.*.service
