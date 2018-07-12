@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 public class IndexController {
 
+    //映射跳转到login.jsp
     @GetMapping("login")
     public String index(){
         return "login";
