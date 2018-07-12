@@ -4,6 +4,11 @@ server:
 spring:
     application:
         name: china_web
+    thymeleaf:
+        cache: false
+        mode: LEGACYHTML5
+        suffix: .html
+        encoding: UTF-8
     dubbo:
         application:
             name: china_web

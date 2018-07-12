@@ -29,6 +29,13 @@
 			<artifactId>china_interface</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+
+		<!--import thymeleaf-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>

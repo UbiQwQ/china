@@ -4,6 +4,7 @@ import blct.china_interface.user.service.UserService;
 import blct.china_interface.user.vo.UserVo;
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -18,8 +19,9 @@ public class UserController {
     private UserService userService;
 
     @GetMapping
-    @ResponseBody
-    public List<UserVo> index() {
-        return userService.queryAll();
+    public String index(Model model) {
+
+        model.addAttribute("test",userService.queryAll());
+        return "login";
     }
 }

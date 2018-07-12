@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr th:each="entity:${test}">
+            <td th:text="${entity.id}"></td>
+            <td th:text="${entity.username}"></td>
+            <td th:text="${entity.password}">1</td>
+        </tr>
+    </table>
+</body>
+</html>
