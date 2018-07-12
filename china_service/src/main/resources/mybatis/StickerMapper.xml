@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="blct.china.service.user.dao.UserMapper" >
-  <resultMap id="BaseResultMap" type="blct.china.service.user.entity.User" >
-    <id column="userid" property="userid" jdbcType="INTEGER" />
-    <result column="nickname" property="nickname" jdbcType="VARCHAR" />
-    <result column="username" property="username" jdbcType="VARCHAR" />
-    <result column="password" property="password" jdbcType="VARCHAR" />
+<mapper namespace="blct.china.service.sticker.dao.StickerMapper" >
+  <resultMap id="BaseResultMap" type="blct.china.service.sticker.entity.Sticker" >
+    <id column="stickerid" property="stickerid" jdbcType="INTEGER" />
+    <result column="message" property="message" jdbcType="VARCHAR" />
     <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
-    <result column="qq" property="qq" jdbcType="VARCHAR" />
-    <result column="wechat" property="wechat" jdbcType="VARCHAR" />
     <result column="valid" property="valid" jdbcType="TINYINT" />
+    <result column="nickname" property="nickname" jdbcType="VARCHAR" />
+    <result column="userid" property="userid" jdbcType="INTEGER" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -70,15 +68,15 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    userid, nickname, username, password, createtime, qq, wechat, valid
+    stickerid, message, createtime, valid, nickname, userid
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="blct.china.service.user.entity.UserExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="blct.china.service.sticker.entity.StickerExample" >
     select
     <if test="distinct" >
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from blct_user
+    from blct_sticker
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
@@ -89,114 +87,96 @@
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
-    from blct_user
-    where userid = #{userid,jdbcType=INTEGER}
+    from blct_sticker
+    where stickerid = #{stickerid,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
-    delete from blct_user
-    where userid = #{userid,jdbcType=INTEGER}
+    delete from blct_sticker
+    where stickerid = #{stickerid,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="blct.china.service.user.entity.UserExample" >
-    delete from blct_user
+  <delete id="deleteByExample" parameterType="blct.china.service.sticker.entity.StickerExample" >
+    delete from blct_sticker
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="blct.china.service.user.entity.User" >
-    insert into blct_user (userid, nickname, username, 
-      password, createtime, qq, 
-      wechat, valid)
-    values (#{userid,jdbcType=INTEGER}, #{nickname,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, 
-      #{password,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, #{qq,jdbcType=VARCHAR}, 
-      #{wechat,jdbcType=VARCHAR}, #{valid,jdbcType=TINYINT})
+  <insert id="insert" parameterType="blct.china.service.sticker.entity.Sticker" >
+    insert into blct_sticker (stickerid, message, createtime, 
+      valid, nickname, userid
+      )
+    values (#{stickerid,jdbcType=INTEGER}, #{message,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, 
+      #{valid,jdbcType=TINYINT}, #{nickname,jdbcType=VARCHAR}, #{userid,jdbcType=INTEGER}
+      )
   </insert>
-  <insert id="insertSelective" parameterType="blct.china.service.user.entity.User" >
-    insert into blct_user
+  <insert id="insertSelective" parameterType="blct.china.service.sticker.entity.Sticker" >
+    insert into blct_sticker
     <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="userid != null" >
-        userid,
+      <if test="stickerid != null" >
+        stickerid,
       </if>
-      <if test="nickname != null" >
-        nickname,
-      </if>
-      <if test="username != null" >
-        username,
-      </if>
-      <if test="password != null" >
-        password,
+      <if test="message != null" >
+        message,
       </if>
       <if test="createtime != null" >
         createtime,
       </if>
-      <if test="qq != null" >
-        qq,
-      </if>
-      <if test="wechat != null" >
-        wechat,
-      </if>
       <if test="valid != null" >
         valid,
       </if>
+      <if test="nickname != null" >
+        nickname,
+      </if>
+      <if test="userid != null" >
+        userid,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="userid != null" >
-        #{userid,jdbcType=INTEGER},
+      <if test="stickerid != null" >
+        #{stickerid,jdbcType=INTEGER},
       </if>
-      <if test="nickname != null" >
-        #{nickname,jdbcType=VARCHAR},
-      </if>
-      <if test="username != null" >
-        #{username,jdbcType=VARCHAR},
-      </if>
-      <if test="password != null" >
-        #{password,jdbcType=VARCHAR},
+      <if test="message != null" >
+        #{message,jdbcType=VARCHAR},
       </if>
       <if test="createtime != null" >
         #{createtime,jdbcType=TIMESTAMP},
       </if>
-      <if test="qq != null" >
-        #{qq,jdbcType=VARCHAR},
-      </if>
-      <if test="wechat != null" >
-        #{wechat,jdbcType=VARCHAR},
-      </if>
       <if test="valid != null" >
         #{valid,jdbcType=TINYINT},
       </if>
+      <if test="nickname != null" >
+        #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null" >
+        #{userid,jdbcType=INTEGER},
+      </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="blct.china.service.user.entity.UserExample" resultType="java.lang.Integer" >
-    select count(*) from blct_user
+  <select id="countByExample" parameterType="blct.china.service.sticker.entity.StickerExample" resultType="java.lang.Integer" >
+    select count(*) from blct_sticker
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map" >
-    update blct_user
+    update blct_sticker
     <set >
-      <if test="record.userid != null" >
-        userid = #{record.userid,jdbcType=INTEGER},
+      <if test="record.stickerid != null" >
+        stickerid = #{record.stickerid,jdbcType=INTEGER},
       </if>
-      <if test="record.nickname != null" >
-        nickname = #{record.nickname,jdbcType=VARCHAR},
-      </if>
-      <if test="record.username != null" >
-        username = #{record.username,jdbcType=VARCHAR},
-      </if>
-      <if test="record.password != null" >
-        password = #{record.password,jdbcType=VARCHAR},
+      <if test="record.message != null" >
+        message = #{record.message,jdbcType=VARCHAR},
       </if>
       <if test="record.createtime != null" >
         createtime = #{record.createtime,jdbcType=TIMESTAMP},
       </if>
-      <if test="record.qq != null" >
-        qq = #{record.qq,jdbcType=VARCHAR},
-      </if>
-      <if test="record.wechat != null" >
-        wechat = #{record.wechat,jdbcType=VARCHAR},
-      </if>
       <if test="record.valid != null" >
         valid = #{record.valid,jdbcType=TINYINT},
+      </if>
+      <if test="record.nickname != null" >
+        nickname = #{record.nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.userid != null" >
+        userid = #{record.userid,jdbcType=INTEGER},
       </if>
     </set>
     <if test="_parameter != null" >
@@ -204,55 +184,45 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map" >
-    update blct_user
-    set userid = #{record.userid,jdbcType=INTEGER},
-      nickname = #{record.nickname,jdbcType=VARCHAR},
-      username = #{record.username,jdbcType=VARCHAR},
-      password = #{record.password,jdbcType=VARCHAR},
+    update blct_sticker
+    set stickerid = #{record.stickerid,jdbcType=INTEGER},
+      message = #{record.message,jdbcType=VARCHAR},
       createtime = #{record.createtime,jdbcType=TIMESTAMP},
-      qq = #{record.qq,jdbcType=VARCHAR},
-      wechat = #{record.wechat,jdbcType=VARCHAR},
-      valid = #{record.valid,jdbcType=TINYINT}
+      valid = #{record.valid,jdbcType=TINYINT},
+      nickname = #{record.nickname,jdbcType=VARCHAR},
+      userid = #{record.userid,jdbcType=INTEGER}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="blct.china.service.user.entity.User" >
-    update blct_user
+  <update id="updateByPrimaryKeySelective" parameterType="blct.china.service.sticker.entity.Sticker" >
+    update blct_sticker
     <set >
-      <if test="nickname != null" >
-        nickname = #{nickname,jdbcType=VARCHAR},
-      </if>
-      <if test="username != null" >
-        username = #{username,jdbcType=VARCHAR},
-      </if>
-      <if test="password != null" >
-        password = #{password,jdbcType=VARCHAR},
+      <if test="message != null" >
+        message = #{message,jdbcType=VARCHAR},
       </if>
       <if test="createtime != null" >
         createtime = #{createtime,jdbcType=TIMESTAMP},
       </if>
-      <if test="qq != null" >
-        qq = #{qq,jdbcType=VARCHAR},
-      </if>
-      <if test="wechat != null" >
-        wechat = #{wechat,jdbcType=VARCHAR},
-      </if>
       <if test="valid != null" >
         valid = #{valid,jdbcType=TINYINT},
       </if>
+      <if test="nickname != null" >
+        nickname = #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null" >
+        userid = #{userid,jdbcType=INTEGER},
+      </if>
     </set>
-    where userid = #{userid,jdbcType=INTEGER}
+    where stickerid = #{stickerid,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="blct.china.service.user.entity.User" >
-    update blct_user
-    set nickname = #{nickname,jdbcType=VARCHAR},
-      username = #{username,jdbcType=VARCHAR},
-      password = #{password,jdbcType=VARCHAR},
+  <update id="updateByPrimaryKey" parameterType="blct.china.service.sticker.entity.Sticker" >
+    update blct_sticker
+    set message = #{message,jdbcType=VARCHAR},
       createtime = #{createtime,jdbcType=TIMESTAMP},
-      qq = #{qq,jdbcType=VARCHAR},
-      wechat = #{wechat,jdbcType=VARCHAR},
-      valid = #{valid,jdbcType=TINYINT}
-    where userid = #{userid,jdbcType=INTEGER}
+      valid = #{valid,jdbcType=TINYINT},
+      nickname = #{nickname,jdbcType=VARCHAR},
+      userid = #{userid,jdbcType=INTEGER}
+    where stickerid = #{stickerid,jdbcType=INTEGER}
   </update>
 </mapper>

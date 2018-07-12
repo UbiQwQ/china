@@ -1,17 +1,17 @@
 package blct.china.service.user.dao;
 
-import java.util.List;
-
-import blct.china.service.user.entity.UserExample;
 import blct.china.service.user.entity.User;
+import blct.china.service.user.entity.UserExample;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface UserMapper {
     int countByExample(UserExample example);
 
     int deleteByExample(UserExample example);
 
-    int deleteByPrimaryKey(Integer id);
+    int deleteByPrimaryKey(Integer userid);
 
     int insert(User record);
 
@@ -19,7 +19,7 @@ public interface UserMapper {
 
     List<User> selectByExample(UserExample example);
 
-    User selectByPrimaryKey(Integer id);
+    User selectByPrimaryKey(Integer userid);
 
     int updateByExampleSelective(@Param("record") User record, @Param("example") UserExample example);
 
