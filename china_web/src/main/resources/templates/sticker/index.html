@@ -176,7 +176,7 @@
             // 绑定关闭事件
             container.on('click', 'a', function () {
                 $(this).parent().remove();
-            }).height($(window).height() - 204);
+            }).height($(window).height());
 
             $.get("/web/sticker/init", {}, function (json) {
                 $.each(json.returnValue, function (i, v) {

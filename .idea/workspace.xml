@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61175c3b-55bf-417d-a2f9-7cad2853f51c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/china_common/src/main/java/blct/china/common/util/Result.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/china_interface/src/main/java/blct/china/interfaces/sticker/service/StickerService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/china_interface/src/main/java/blct/china/interfaces/sticker/vo/StickerVo.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/sticker/service/StickerServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/china_web/src/main/java/blct/china/web/sticker/controller/StickerController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/china_web/src/main/resources/static/config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/china_web/src/main/resources/static/js/jquery/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/china_web/src/main/resources/templates/sticker/index.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/china_interface/src/main/java/blct/china/interfaces/user/vo/UserVo.java" afterPath="$PROJECT_DIR$/china_interface/src/main/java/blct/china/interfaces/user/vo/UserVo.java" />
-      <change beforePath="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/sticker/entity/Sticker.java" afterPath="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/sticker/entity/Sticker.java" />
-      <change beforePath="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/sticker/entity/StickerExample.java" afterPath="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/sticker/entity/StickerExample.java" />
-      <change beforePath="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/user/entity/User.java" afterPath="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/user/entity/User.java" />
+      <change beforePath="$PROJECT_DIR$/china_web/src/main/resources/templates/sticker/index.html" afterPath="$PROJECT_DIR$/china_web/src/main/resources/templates/sticker/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,8 +60,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/china_web/src/main/resources/templates/sticker/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="85" column="17" lean-forward="true" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+            <state relative-caret-position="198">
+              <caret line="178" column="40" lean-forward="false" selection-start-line="178" selection-start-column="40" selection-end-line="178" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -706,12 +695,12 @@
       <updated>1531307891747</updated>
       <workItem from="1531307893251" duration="157000" />
       <workItem from="1531308055022" duration="6467000" />
-      <workItem from="1531359599557" duration="18107000" />
+      <workItem from="1531359599557" duration="18522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24731000" />
+    <option name="totallyTimeSpent" value="25146000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -726,7 +715,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34565216" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34565216" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1150,8 +1139,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/china_web/src/main/resources/templates/sticker/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="85" column="17" lean-forward="true" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+        <state relative-caret-position="198">
+          <caret line="178" column="40" lean-forward="false" selection-start-line="178" selection-start-column="40" selection-end-line="178" selection-end-column="40" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
