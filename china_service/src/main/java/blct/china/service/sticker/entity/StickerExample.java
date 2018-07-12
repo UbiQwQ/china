@@ -305,7 +305,7 @@ public class StickerExample {
             return (Criteria) this;
         }
 
-        public Criteria andValidEqualTo(Byte value) {
+        public Criteria andValidEqualTo(Integer value) {
             addCriterion("valid =", value, "valid");
             return (Criteria) this;
         }

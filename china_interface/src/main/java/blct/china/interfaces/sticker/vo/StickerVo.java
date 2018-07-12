@@ -1,11 +1,12 @@
-package blct.china.service.sticker.entity;
+package blct.china.interfaces.sticker.vo;
 
 import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
+
 @Data
-public class Sticker implements Serializable {
+public class StickerVo implements Serializable {
     private Integer stickerid;
 
     private String message;
@@ -32,7 +33,7 @@ public class Sticker implements Serializable {
         if (getClass() != that.getClass()) {
             return false;
         }
-        Sticker other = (Sticker) that;
+        StickerVo other = (StickerVo) that;
         return (this.getStickerid() == null ? other.getStickerid() == null : this.getStickerid().equals(other.getStickerid()))
             && (this.getMessage() == null ? other.getMessage() == null : this.getMessage().equals(other.getMessage()))
             && (this.getCreatetime() == null ? other.getCreatetime() == null : this.getCreatetime().equals(other.getCreatetime()))
