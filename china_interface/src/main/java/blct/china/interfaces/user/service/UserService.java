@@ -1,6 +1,6 @@
-package blct.china_interface.user.service;
+package blct.china.interfaces.user.service;
 
-import blct.china_interface.user.vo.UserVo;
+import blct.china.interfaces.user.vo.UserVo;
 
 import java.util.List;
 

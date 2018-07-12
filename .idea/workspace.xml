@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61175c3b-55bf-417d-a2f9-7cad2853f51c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/china_service/src/main/resources/sql/china.sql" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/china_interface/src/main/java/blct/china/interface/user/service/UserService.java" afterPath="$PROJECT_DIR$/china_interface/src/main/java/blct/china/interfaces/user/service/UserService.java" />
+      <change beforePath="$PROJECT_DIR$/china_interface/src/main/java/blct/china/interface/user/vo/UserVo.java" afterPath="$PROJECT_DIR$/china_interface/src/main/java/blct/china/interfaces/user/vo/UserVo.java" />
+      <change beforePath="$PROJECT_DIR$/china_interface/src/test/java/blct/china/interface/ChinaInterfaceApplicationTests.java" afterPath="$PROJECT_DIR$/china_interface/src/test/java/blct/china/interfaces/ChinaInterfaceApplicationTests.java" />
+      <change beforePath="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/user/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/user/service/UserServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/china_web/src/main/java/blct/china/web/user/controller/UserController.java" afterPath="$PROJECT_DIR$/china_web/src/main/java/blct/china/web/user/controller/UserController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/china_service/src/main/java/blct/china/service/user/dao/UserMapper.java">
+      <file leaf-file-name="UserVo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/china_interface/src/main/java/blct/china/interfaces/user/vo/UserVo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="171">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,9 +57,21 @@
       <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/china_service/src/main/java/blct/china/service/user/service/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="114">
+              <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/china_interface/src/main/java/blct/china/interfaces/user/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,11 +95,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/china_web/src/main/java/blct/china/web/user/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/china_service/src/main/resources/mybatis/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1311">
-              <caret line="69" column="12" lean-forward="true" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+            <state relative-caret-position="228">
+              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
               <folding>
                 <marker date="1531383147979" expanded="true" signature="3812:3925" ph="select from blct_user" />
                 <marker date="1531383147979" expanded="true" signature="4012:4079" ph="delete from blct_user... " />
@@ -112,16 +139,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
               <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/china_service/src/main/java/blct/china/service/user/entity/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -197,16 +214,19 @@
         <option value="$PROJECT_DIR$/china_web/pom.xml" />
         <option value="$PROJECT_DIR$/china_web/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/china_web/src/main/java/blct/china/web/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/china_web/src/main/java/blct/china/web/user/controller/UserController.java" />
         <option value="$PROJECT_DIR$/china_web/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/user/dao/StickerMapper.java" />
         <option value="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/user/dao/UserMapper.java" />
-        <option value="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/user/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/user/entity/UserExample.java" />
         <option value="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/sticker/dao/StickerMapper.java" />
         <option value="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/sticker/entity/StickerExample.java" />
         <option value="$PROJECT_DIR$/china_service/src/main/resources/mybatis/StickerMapper.xml" />
         <option value="$PROJECT_DIR$/china_service/src/main/resources/mybatis/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/china_interface/src/main/java/blct/china/interface/user/service/UserService.java" />
+        <option value="$PROJECT_DIR$/china_interface/src/main/java/blct/china/interfaces/user/vo/UserVo.java" />
+        <option value="$PROJECT_DIR$/china_interface/src/main/java/blct/china/interfaces/user/service/UserService.java" />
+        <option value="$PROJECT_DIR$/china_service/src/main/java/blct/china/service/user/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/china_web/src/main/java/blct/china/web/user/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -326,28 +346,74 @@
             <path>
               <item name="china" type="b2602c69:ProjectViewProjectNode" />
               <item name="china" type="462c0819:PsiDirectoryNode" />
-              <item name="china_service" type="462c0819:PsiDirectoryNode" />
+              <item name="china_interface" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="china" type="b2602c69:ProjectViewProjectNode" />
               <item name="china" type="462c0819:PsiDirectoryNode" />
-              <item name="china_service" type="462c0819:PsiDirectoryNode" />
+              <item name="china_interface" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="china" type="b2602c69:ProjectViewProjectNode" />
               <item name="china" type="462c0819:PsiDirectoryNode" />
-              <item name="china_service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="china" type="b2602c69:ProjectViewProjectNode" />
-              <item name="china" type="462c0819:PsiDirectoryNode" />
-              <item name="china_service" type="462c0819:PsiDirectoryNode" />
+              <item name="china_interface" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="china" type="b2602c69:ProjectViewProjectNode" />
+              <item name="china" type="462c0819:PsiDirectoryNode" />
+              <item name="china_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="china" type="b2602c69:ProjectViewProjectNode" />
+              <item name="china" type="462c0819:PsiDirectoryNode" />
+              <item name="china_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="china" type="b2602c69:ProjectViewProjectNode" />
+              <item name="china" type="462c0819:PsiDirectoryNode" />
+              <item name="china_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="china" type="b2602c69:ProjectViewProjectNode" />
+              <item name="china" type="462c0819:PsiDirectoryNode" />
+              <item name="china_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="china" type="b2602c69:ProjectViewProjectNode" />
+              <item name="china" type="462c0819:PsiDirectoryNode" />
+              <item name="china_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="china" type="b2602c69:ProjectViewProjectNode" />
+              <item name="china" type="462c0819:PsiDirectoryNode" />
+              <item name="china_service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -525,12 +591,12 @@
       <updated>1531307891747</updated>
       <workItem from="1531307893251" duration="157000" />
       <workItem from="1531308055022" duration="6467000" />
-      <workItem from="1531359599557" duration="13070000" />
+      <workItem from="1531359599557" duration="13477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19694000" />
+    <option name="totallyTimeSpent" value="20101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -590,7 +656,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/china_interface/src/main/java/blct/china/interface/user/vo/UserVo.java">
+    <entry file="file://$PROJECT_DIR$/china_interface/src/main/java/blct/china/interfaces/user/vo/UserVo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
@@ -606,12 +672,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/china_interface/src/main/java/blct/china/interface/user/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/china_interface/src/main/java/blct/china/interfaces/user/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -632,8 +698,8 @@
           <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#681#682#0" expanded="false" />
-            <element signature="e#771#772#0" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
+            <element signature="e#644#645#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -701,14 +767,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/china_interface/src/main/java/blct/china_interface/user/userService.java" />
-    <entry file="file://$PROJECT_DIR$/china_interface/src/main/java/blct/china/interface/user/vo/UserVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/china_service/src/main/resources/banner.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -721,14 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/china_interface/src/main/java/blct/china/interface/user/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -797,14 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/china_web/src/main/java/blct/china/web/user/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/china_web/src/main/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -856,14 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/china_service/src/main/java/blct/china/service/user/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/china_service/src/main/java/blct/china/service/sticker/dao/StickerMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -907,7 +941,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/china_service/src/main/resources/sql/china.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-31">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -915,8 +949,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/china_service/src/main/resources/mybatis/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="69" column="12" lean-forward="true" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+        <state relative-caret-position="228">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding>
             <marker date="1531383147979" expanded="true" signature="3812:3925" ph="select from blct_user" />
             <marker date="1531383147979" expanded="true" signature="4012:4079" ph="delete from blct_user... " />
@@ -927,6 +961,40 @@
             <marker date="1531383147979" expanded="true" signature="8248:8986" ph="update blct_user... " />
             <marker date="1531383147979" expanded="true" signature="9091:9467" ph="update blct_user... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/china_interface/src/main/java/blct/china/interfaces/user/vo/UserVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/china_interface/src/main/java/blct/china/interfaces/user/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/china_service/src/main/java/blct/china/service/user/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/china_web/src/main/java/blct/china/web/user/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>

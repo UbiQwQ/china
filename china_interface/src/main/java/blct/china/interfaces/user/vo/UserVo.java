@@ -1,4 +1,4 @@
-package blct.china_interface.user.vo;
+package blct.china.interfaces.user.vo;
 
 import lombok.Data;
 
